@@ -14,6 +14,7 @@ import (
     ranges "github.com/gobyexample/ranges"
 	multi "github.com/gobyexample/multiplereturnvalue"
 	variad "github.com/gobyexample/variadic"
+	errors "github.com/gobyexample/errors"
 	anon "github.com/gobyexample/anonymous"
 )
 
@@ -32,5 +33,6 @@ func main(){
 	fmt.Println(multi.Vals())
 	variad.Sum([]int{1,2,3,4,5}...)
 	fmt.Println(anon.Intseq()())
+	fmt.Println(errors.F1(42))
 }
 
