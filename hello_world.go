@@ -1,22 +1,24 @@
-package main 
+package main
 
 import (
 	"fmt"
-	values "github.com/gobyexample/values"
-    variables "github.com/gobyexample/variables"
-	constant "github.com/gobyexample/constant"
-	forloop "github.com/gobyexample/forloop"
-    ifelse "github.com/gobyexample/ifelse"
+
 	Switch "github.com/gobyexample/Switch"
-    array "github.com/gobyexample/array"
-	slices "github.com/gobyexample/array/slices"
-	maps "github.com/gobyexample/maps"
-    ranges "github.com/gobyexample/ranges"
-	multi "github.com/gobyexample/multiplereturnvalue"
-	variad "github.com/gobyexample/variadic"
-	errors "github.com/gobyexample/errors"
 	anon "github.com/gobyexample/anonymous"
+	array "github.com/gobyexample/array"
+	slices "github.com/gobyexample/array/slices"
 	channel "github.com/gobyexample/channel"
+	constant "github.com/gobyexample/constant"
+	errors "github.com/gobyexample/errors"
+	forloop "github.com/gobyexample/forloop"
+	ifelse "github.com/gobyexample/ifelse"
+	maps "github.com/gobyexample/maps"
+	multi "github.com/gobyexample/multiplereturnvalue"
+	ranges "github.com/gobyexample/ranges"
+	thread "github.com/gobyexample/threadgo"
+	values "github.com/gobyexample/values"
+	variables "github.com/gobyexample/variables"
+	variad "github.com/gobyexample/variadic"
 )
 
 func main(){
@@ -39,7 +41,8 @@ func main(){
 	go channel.TestChannel(done)
 
 	<-done
-
+    
+	fmt.Println(thread.Mythread(1,2))
 
 }
 
